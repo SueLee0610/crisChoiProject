@@ -4,8 +4,6 @@ import java.awt.*;
 
 import javax.swing.ImageIcon;
 
-import model.C_Enemy;
-
 import java.util.ArrayList;
 
 public class Dwarf extends Enemy{
