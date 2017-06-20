@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 import model.Bird;
-import model.Boss;
+import model.MiddleBossSoldier;
+import model.Turtle;
 import model.Character;
 import model.Dog;
 import model.Dwarf;
@@ -41,9 +42,9 @@ public class GUImain implements GameStateListener {
 			switch(currentLevel){
 				case 2:
 					ArrayList<Enemy> enemies = new ArrayList<>();
-		            enemies.add(new Bird(300, 250, "./images/bird.png"));
-		            enemies.add(new Bird(1200, 300, "./images/bird.png"));
-		            enemies.add(new Boss(700, 150, "./images/turtle.png"));
+		            enemies.add(new Bird(300, 250));
+		            enemies.add(new Bird(1200, 220));
+		            enemies.add(new Turtle(700, 200));
 		            character.resetStats();
 		            Board level2 = new Board("./images/sky.png", enemies, this, character);
 		            gameFrame.dispose();
@@ -53,9 +54,9 @@ public class GUImain implements GameStateListener {
 		            
 				case 3:
 					ArrayList<Enemy> enemies3 = new ArrayList<>();
-		            enemies3.add(new Dwarf(1600, 200, "./images/dwarf.png"));
-		            enemies3.add(new Bird(300, 250, "./images/bird.png"));
-		            enemies3.add(new Boss(2000, 150, "./images/boss.png"));
+		            enemies3.add(new Dwarf(1600, 200));
+		            enemies3.add(new Bird(300, 250));
+		            enemies3.add(new MiddleBossSoldier(2000, 150));
 		            character.resetStats();
 		            Board level3 = new Board("./images/sky.png", enemies3, this, character);
 		            gameFrame.dispose();
@@ -97,11 +98,11 @@ public class GUImain implements GameStateListener {
             gameFrame.setLocationRelativeTo(null);
                 
             ArrayList<Enemy> enemies = new ArrayList<>();
-            enemies.add(new Dwarf(2000, 200, "./images/dwarf.png"));
-            enemies.add(new Dwarf(1300, 150, "./images/dwarf.png"));
-            enemies.add(new Dog(700, 250, "./images/dog.png"));
-            enemies.add(new Mammoth(1500, 250, "./images/mammoth.png"));
-            enemies.add(new Boss(2500, 150, "./images/boss.png"));
+            enemies.add(new Dwarf(2000, 200));
+            enemies.add(new Dwarf(1300, 150));
+            enemies.add(new Dog(700, 250));
+            enemies.add(new Mammoth(1500, 250));
+            enemies.add(new MiddleBossSoldier(2500, 150));
             Board level1 = new Board("./images/Forest.png", enemies, this, character);
 
             gameFrame.add(level1); //frame¿¡ boardÇü¼º

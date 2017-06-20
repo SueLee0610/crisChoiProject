@@ -4,14 +4,14 @@ import java.awt.*;
 
 import javax.swing.ImageIcon;
  
-public class Boss extends Enemy {
+public class MiddleBossSoldier extends Enemy {
 		
 		private int xMove, nx, backgroundXPos, left, yMove;
        
         //hp 추가
-        public Boss(int startX, int startY, String location) //적마다 위치가 각각 다르므로 생성자에 아예 넣어줌
+        public MiddleBossSoldier(int startX, int startY) //적마다 위치가 각각 다르므로 생성자에 아예 넣어줌
         {
-        		super(startX, startY, location);
+        		super(startX, startY, "./images/boss.png");
                	
         		hp = 60;
         

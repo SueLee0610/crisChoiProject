@@ -7,8 +7,8 @@ public class Mammoth extends Enemy{
 	int mammothWidth = 216;
 	int mammothHeight = 190;
 	
-	public Mammoth(int startX, int startY, String location) {
-		super(startX, startY, location);
+	public Mammoth(int startX, int startY) {
+		super(startX, startY, "./images/mammoth.png");
 		hp = 30;
 	}
 	
