@@ -7,9 +7,10 @@ public class Dog extends Enemy{
 	int dogWidth = 251;
 	int dogHeight = 165;
 	
-	public Dog(int startX, int startY, String location) {
-		super(startX, startY, location);
+	public Dog(int startX, int startY) {
+		super(startX, startY, "./images/dog.png");
 		hp = 10;
+		attackPower = 7;
 	}
 	
     public Rectangle getBounds(){

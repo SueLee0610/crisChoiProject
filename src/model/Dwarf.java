@@ -12,9 +12,10 @@ public class Dwarf extends Enemy{
 		int dwarfHeight = 181;
 		
 	
-		public Dwarf(int startX, int startY, String location) {
-			super(startX, startY, location);
+		public Dwarf(int startX, int startY) {
+			super(startX, startY, "./images/dwarf.png");
 			hp = 10;
+			attackPower = 12;
 		}
  
 		@Override
