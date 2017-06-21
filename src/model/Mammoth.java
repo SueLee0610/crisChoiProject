@@ -10,6 +10,7 @@ public class Mammoth extends Enemy{
 	public Mammoth(int startX, int startY) {
 		super(startX, startY, "./images/mammoth.png");
 		hp = 30;
+		attackPower = 18;
 	}
 	
     public Rectangle getBounds(){

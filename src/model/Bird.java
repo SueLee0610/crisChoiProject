@@ -12,6 +12,7 @@ public class Bird extends Enemy{
 	public Bird(int startX, int startY) {
 		super(startX, startY, "./images/bird.png");
 		hp = 20;
+		attackPower = 5;
 	}
 	
     public Rectangle getBounds(){

@@ -15,6 +15,7 @@ public class Dwarf extends Enemy{
 		public Dwarf(int startX, int startY) {
 			super(startX, startY, "./images/dwarf.png");
 			hp = 10;
+			attackPower = 12;
 		}
  
 		@Override

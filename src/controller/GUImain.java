@@ -8,6 +8,7 @@ import model.Bird;
 import model.MiddleBossSoldier;
 import model.Turtle;
 import model.Character;
+import model.DBHandler;
 import model.Dog;
 import model.Dwarf;
 import model.Enemy;
@@ -31,11 +32,8 @@ public class GUImain implements GameStateListener {
         public GUImain(){
         	jframe = new StartScreen(this);
         }
-        public static void main(String[] args){
-        	
-                new GUImain();
-        	
-        }
+    
+        
 		@Override
 		public void onLevelFinished() {   
 			currentLevel ++;
@@ -91,7 +89,7 @@ public class GUImain implements GameStateListener {
 			jframe.dispose();
 			// TODO Auto-generated method stub
 			gameFrame = new JFrame();
-            gameFrame.setTitle("2-D Test Game");
+            gameFrame.setTitle("DisneyGame");
             gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             gameFrame.setSize(1136,640); //배경화면 크기 (700,385)
             //frame.setVisible(true); //frame 형성

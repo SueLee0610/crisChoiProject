@@ -14,6 +14,7 @@ public class MiddleBossSoldier extends Enemy {
         		super(startX, startY, "./images/boss.png");
                	
         		hp = 60;
+        		attackPower = 30;
         
                 left = 150; //스크린에서 왼쪽으로 갈 때 위치 고정
         }

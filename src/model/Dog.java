@@ -10,6 +10,7 @@ public class Dog extends Enemy{
 	public Dog(int startX, int startY) {
 		super(startX, startY, "./images/dog.png");
 		hp = 10;
+		attackPower = 7;
 	}
 	
     public Rectangle getBounds(){

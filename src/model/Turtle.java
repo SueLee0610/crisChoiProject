@@ -10,6 +10,7 @@ public class Turtle extends Enemy{
 	public Turtle(int startX, int startY) {
 		super(startX, startY, "./images/turtle.png");
 		hp = 10;
+		attackPower = 4;
 	}
 	
     public Rectangle getBounds(){
