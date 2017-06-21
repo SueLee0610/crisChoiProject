@@ -11,6 +11,7 @@ public abstract class Enemy {
 				yPos,
 				hp,
 				attackPower;
+		
 
 		protected Image imgEnemy;
 		
@@ -80,8 +81,9 @@ public abstract class Enemy {
 
 		public void move(int xMove, int left) //dx
         {
-                if (xMove == 1 && !((left + xMove )< 150))//Added this to only move enemy when character moves forward (not back)
-                xPos = xPos - xMove; //적이 왼쪽으로 움직임
+             if (/*xMove == 1 && */!((left + xMove )< 80)) {//Added this to only move enemy when character moves forward (not back)
+              		xPos = xPos - xMove - 1; //적이 왼쪽으로 움직임
+             }
         }
  
         public abstract Rectangle getBounds();
