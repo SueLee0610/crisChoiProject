@@ -40,8 +40,8 @@ public class GUImain implements GameStateListener {
 			switch(currentLevel){
 				case 2:
 					ArrayList<Enemy> enemies = new ArrayList<>();
-		            enemies.add(new Bird(300, 250));
-		            enemies.add(new Bird(1200, 220));
+		            enemies.add(new Bird(1000, 250));
+		            enemies.add(new Bird(1600, 220));
 		            enemies.add(new Turtle(700, 200));
 		            character.resetStats();
 		            Board level2 = new Board("./images/sky.png", enemies, this, character);
@@ -53,7 +53,7 @@ public class GUImain implements GameStateListener {
 				case 3:
 					ArrayList<Enemy> enemies3 = new ArrayList<>();
 		            enemies3.add(new Dwarf(1600, 200));
-		            enemies3.add(new Bird(300, 250));
+		            enemies3.add(new Bird(900, 250));
 		            enemies3.add(new MiddleBossSoldier(2000, 150));
 		            character.resetStats();
 		            Board level3 = new Board("./images/sky.png", enemies3, this, character);
